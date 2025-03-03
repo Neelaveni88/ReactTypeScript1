@@ -1,9 +1,18 @@
-import { Route, Router, Routes } from "react-router-dom";
+
+
+import { Route, Routes } from 'react-router'
 import './App.css'
+import CartProvider from './Components/CartProvider'
 import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import About from "./Components/About";
-import Service from "./Components/Service";
+import Ecommerce from './Components/ECommerce'
+import Cart from './Components/Cart'
+import About from './Components/About'
+import ContactUs from './Components/ContactUs'
+import "bootstrap/dist/css/bootstrap.min.css";
+import Checkout from './Components/Checkout'
+
+
+
 
 
 function App() {
@@ -11,15 +20,20 @@ function App() {
 
   return (
     <>
-     
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/service" element={<Service />} />
-      </Routes>
-  
-     
+    
+    <CartProvider>
+        <Navbar />
+        
+        <Routes>
+        <Route path="/" element={<Ecommerce />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+    </CartProvider>
+   
+      
     
     </>
   )

@@ -1,23 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
-    <div className='navbar'>
-        <div className='logo'>TamTree India Pvt Ltd</div>
-        <ul>
-            <Link to="/">
-            <li>Home</li>
-            </Link>
-            <Link to="/About">
-            <li>About</li>
-            </Link>
-            <Link to="/Service">
-            <li>Service</li>
-            </Link>
-        </ul>
-        
+    <div className="navbar">
+      <h3 className="logo">Dojana's Little Treasures</h3>
+      <div>
+      <ul>
+      <li><Link style={{textDecoration:"none", color:"white",marginLeft:"260px"}} to="/">Home</Link></li>
+      <li><Link style={{textDecoration:"none", color:"white"}} to="/about">About</Link></li>
+      <li> <Link style={{textDecoration:"none", color:"white"}}to="/contactus">Contact Us</Link></li>
+      <li><Link style={{textDecoration:"none", color:"white"}}to="/cart">Cart</Link></li>
+      <li><Link style={{textDecoration:"none", color:"white"}} to="/checkout">Checkout</Link></li>
+      </ul>
+      </div>
+      <button className="button1">Log in</button>
+   
     </div>
   );
 };
-export default Navbar
+
+export default Navbar;
