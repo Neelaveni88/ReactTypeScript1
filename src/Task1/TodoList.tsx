@@ -1,6 +1,7 @@
 import React from "react";
 import { Todo } from "./UseToDos";
-import TodoItem from "./ToDOItem";
+import TodoItem from "./TodoItem";
+
 
 
 

@@ -6,10 +6,10 @@ interface Props {
 
 const Filter: React.FC<Props> = ({ setFilter }) => {
   return (
-    <div className="Button">
-      <button onClick={() => setFilter("All")}>All</button>
-      <button onClick={() => setFilter("Completed")}>Completed</button>
-      <button onClick={() => setFilter("Incomplete")}>Incomplete</button>
+    <div>
+      <button style={{backgroundColor:"blue",color:"white",marginTop:"10px" }}onClick={() => setFilter("All")}>All</button>
+      <button style={{backgroundColor:"blue",color:"white",marginTop:"10px",marginLeft:"5px" }} onClick={() => setFilter("Completed")}>Completed</button>
+      <button style={{backgroundColor:"blue",color:"white",marginTop:"10px",marginLeft:"5px" }}onClick={() => setFilter("Incomplete")}>Incomplete</button>
     </div>
   );
 };
