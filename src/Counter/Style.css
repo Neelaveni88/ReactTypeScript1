@@ -1,0 +1,37 @@
+.app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color:brown;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .inputField input {
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .timer {
+    font-size: 2rem;
+    font-weight: bold; 
+  }
+  
+  .timer-controls button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: 2px solid grey;
+  }
+  
