@@ -3,9 +3,6 @@ import { Todo } from "./UseToDos";
 import TodoItem from "./TodoItem";
 
 
-
-
-
 interface Props {
   todos: Todo[];
   toggleTodo: (id: number) => void;
